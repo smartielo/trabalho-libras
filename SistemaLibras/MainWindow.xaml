@@ -1,0 +1,63 @@
+﻿<Window x:Class="SistemaLibras.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SistemaLibras"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="260"/> <ColumnDefinition Width="*"/>   </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" Background="{StaticResource PrimaryBlue}" CornerRadius="0,20,20,0">
+            <StackPanel Margin="10">
+                <TextBlock Text="LibrasPOP" FontSize="32" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,40"/>
+
+                <Button Content="Início" FontSize="18" FontWeight="SemiBold" Margin="10" Padding="15" Background="White" Foreground="{StaticResource TextPrimary}" />
+                <Button Content="Módulos de Aprendizado" FontSize="18" FontWeight="SemiBold" Margin="10,0,10,10" Padding="15" Background="White" Foreground="{StaticResource TextPrimary}"/>
+                <Button Content="Dicionário de Libras" FontSize="18" FontWeight="SemiBold" Margin="10,0,10,10" Padding="15" Background="White" Foreground="{StaticResource TextPrimary}"/>
+                <Button Content="Jogos e Exercícios" FontSize="18" FontWeight="SemiBold" Margin="10,0,10,10" Padding="15" Background="White" Foreground="{StaticResource TextPrimary}"/>
+                <Button Content="Meu Progresso" FontSize="18" FontWeight="SemiBold" Margin="10,0,10,10" Padding="15" Background="White" Foreground="{StaticResource TextPrimary}"/>
+
+                <Button Content="Configurações" VerticalAlignment="Bottom" Margin="10,150,10,10" Padding="10" Background="Transparent" BorderBrush="White" BorderThickness="1" Foreground="White"/>
+            </StackPanel>
+        </Border>
+
+        <Grid Grid.Column="1" Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,20,20">
+                <TextBlock Text="Olá, Aluno!" VerticalAlignment="Center" FontSize="18" />
+                </StackPanel>
+
+            <StackPanel Grid.Row="1" Margin="20,0,20,0">
+                <TextBlock Text="Seu Painel de Controle" FontSize="36" FontWeight="Bold" Foreground="{StaticResource TextPrimary}"/>
+                <TextBlock Text="Continue de onde parou e veja seu progresso." FontSize="18" Margin="0,5,0,25" Foreground="Gray"/>
+                
+                <Border Background="White" CornerRadius="15" Padding="25" Margin="0,0,0,20">
+                    <StackPanel>
+                        <TextBlock Text="Módulo Atual: Saudações e Frases Básicas" FontSize="20" FontWeight="SemiBold"/>
+                        <TextBlock Text="Próxima lição: Aprendendo a dizer 'Obrigado'" Margin="0,5,0,20"/>
+                        <Button Content="Continuar Aprendendo" HorizontalAlignment="Left" Padding="20,10" FontSize="16"
+                                Background="{StaticResource AccentPink}" Foreground="White" BorderThickness="0"/>
+                    </StackPanel>
+                </Border>
+                
+                <Border Background="White" CornerRadius="15" Padding="25">
+                    <StackPanel>
+                        <TextBlock Text="Seu Progresso de Aprendizado" FontSize="20" FontWeight="SemiBold" Margin="0,0,0,10"/>
+                        <TextBlock Text="Sinais aprendidos: 42 de 200" FontSize="16"/>
+                        <ProgressBar Value="21" Height="25" Margin="0,10,0,0" Background="{StaticResource BackgroundLight}" 
+                                     Foreground="{StaticResource AccentYellow}"/>
+                        <TextBlock Text="Você ganhou 3 conquistas!" FontSize="16" Margin="0,10,0,0"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

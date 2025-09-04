@@ -1,0 +1,16 @@
+﻿<Application x:Class="SistemaLibras.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <SolidColorBrush x:Key="PrimaryBlue" Color="#70D6FF"/>
+            <SolidColorBrush x:Key="AccentPink" Color="#FF70A6"/>
+            <SolidColorBrush x:Key="AccentOrange" Color="#FF9770"/>
+            <SolidColorBrush x:Key="AccentYellow" Color="#FFD670"/>
+            <SolidColorBrush x:Key="AccentLime" Color="#E9FF70"/>
+            <SolidColorBrush x:Key="TextPrimary" Color="#333333"/>
+            <SolidColorBrush x:Key="BackgroundLight" Color="#F4F7F6"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
